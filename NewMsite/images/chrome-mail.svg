@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-d8380a4b-cbbe-472c-8cc7-47cf780ee45d" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="uuid-23e3fba1-0f68-41ef-8976-d4c668ad490f" x1="5.5" y1="49.08" x2="94.5" y2="49.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0067ab"/>
+      <stop offset=".03" stop-color="#056aac"/>
+      <stop offset=".07" stop-color="#1674b2"/>
+      <stop offset=".12" stop-color="#3185bb"/>
+      <stop offset=".13" stop-color="#3d8cbf"/>
+      <stop offset=".16" stop-color="#4590c1"/>
+      <stop offset=".2" stop-color="#5c9cc6"/>
+      <stop offset=".24" stop-color="#81b1d0"/>
+      <stop offset=".26" stop-color="#8db7d3"/>
+      <stop offset=".3" stop-color="#79abcd"/>
+      <stop offset=".33" stop-color="#6ea5ca"/>
+      <stop offset=".36" stop-color="#639fc7"/>
+      <stop offset=".41" stop-color="#4791c1"/>
+      <stop offset=".41" stop-color="#4590c1"/>
+      <stop offset=".45" stop-color="#4c94c3"/>
+      <stop offset=".5" stop-color="#5f9fca"/>
+      <stop offset=".51" stop-color="#67a4cd"/>
+      <stop offset=".59" stop-color="#72abd0"/>
+      <stop offset=".68" stop-color="#5e9fca"/>
+      <stop offset=".7" stop-color="#66a3cb"/>
+      <stop offset=".76" stop-color="#8db7d3"/>
+      <stop offset=".81" stop-color="#66a2c9"/>
+      <stop offset=".87" stop-color="#3d8cbf"/>
+      <stop offset=".92" stop-color="#2b81b9"/>
+      <stop offset="1" stop-color="#0067ab"/>
+    </linearGradient>
+  </defs>
+  <path d="m18.21,4.58c-7.01,0-12.71,5.7-12.71,12.71v63.57c0,7.01,5.7,12.71,12.71,12.71h63.57c7.01,0,12.71-5.7,12.71-12.71V17.29c0-7.01-5.7-12.71-12.71-12.71H18.21Zm30.59,47.62l-30.55-19.73c.36-3.18,3.04-5.64,6.32-5.64h50.86c3.28,0,5.96,2.46,6.32,5.64l-30.55,19.73c-.36.24-.77.36-1.19.36s-.83-.12-1.19-.36Zm5.84,5.34l27.14-17.52v24.95c0,3.52-2.84,6.36-6.36,6.36H24.57c-3.52,0-6.36-2.84-6.36-6.36v-24.95l27.14,17.52c1.39.89,3,1.37,4.65,1.37s3.26-.48,4.65-1.37Z" fill="url(#uuid-23e3fba1-0f68-41ef-8976-d4c668ad490f)"/>
+</svg>

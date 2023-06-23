@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-89a66afe-94e5-4f19-876a-61d6196cda72" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="uuid-29632620-5692-40bf-b87e-861e938640d6" x1="5.5" y1="49.66" x2="94.5" y2="49.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0067ab"/>
+      <stop offset=".03" stop-color="#056aac"/>
+      <stop offset=".07" stop-color="#1674b2"/>
+      <stop offset=".12" stop-color="#3185bb"/>
+      <stop offset=".13" stop-color="#3d8cbf"/>
+      <stop offset=".16" stop-color="#4590c1"/>
+      <stop offset=".2" stop-color="#5c9cc6"/>
+      <stop offset=".24" stop-color="#81b1d0"/>
+      <stop offset=".26" stop-color="#8db7d3"/>
+      <stop offset=".3" stop-color="#79abcd"/>
+      <stop offset=".33" stop-color="#6ea5ca"/>
+      <stop offset=".36" stop-color="#639fc7"/>
+      <stop offset=".41" stop-color="#4791c1"/>
+      <stop offset=".41" stop-color="#4590c1"/>
+      <stop offset=".45" stop-color="#4c94c3"/>
+      <stop offset=".5" stop-color="#5f9fca"/>
+      <stop offset=".51" stop-color="#67a4cd"/>
+      <stop offset=".59" stop-color="#72abd0"/>
+      <stop offset=".68" stop-color="#5e9fca"/>
+      <stop offset=".7" stop-color="#66a3cb"/>
+      <stop offset=".76" stop-color="#8db7d3"/>
+      <stop offset=".81" stop-color="#66a2c9"/>
+      <stop offset=".87" stop-color="#3d8cbf"/>
+      <stop offset=".92" stop-color="#2b81b9"/>
+      <stop offset="1" stop-color="#0067ab"/>
+    </linearGradient>
+  </defs>
+  <path d="m81.79,5.16H18.21c-7.01,0-12.71,5.7-12.71,12.71v63.57c0,7.01,5.7,12.71,12.71,12.71h63.57c7.01,0,12.71-5.7,12.71-12.71V17.87c0-7.01-5.7-12.71-12.71-12.71Zm-44.21,73.53c-3.01,0-5.44-2.44-5.44-5.44s2.44-5.44,5.44-5.44,5.44,2.44,5.44,5.44-2.44,5.44-5.44,5.44Zm32.66,0c-3.01,0-5.44-2.44-5.44-5.44s2.44-5.44,5.44-5.44,5.44,2.44,5.44,5.44-2.44,5.44-5.44,5.44Zm11.99-48.72l-4.65,17.27c-.96,3.56-4.2,6.04-7.88,6.04h-32.72l.61,3.23c.25,1.28,1.37,2.21,2.68,2.21h32.7c1.51,0,2.72,1.21,2.72,2.72s-1.21,2.72-2.72,2.72h-32.7c-3.92,0-7.29-2.79-8.02-6.63l-5.85-30.73c-.08-.43-.45-.74-.9-.74h-5.16c-1.51,0-2.72-1.21-2.72-2.72s1.21-2.72,2.72-2.72h5.16c2.49,0,4.71,1.45,5.74,3.63h46.61c2.98,0,5.16,2.84,4.38,5.72Z" fill="url(#uuid-29632620-5692-40bf-b87e-861e938640d6)"/>
+</svg>

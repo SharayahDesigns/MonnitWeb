@@ -1,0 +1,58 @@
+:root {
+    --monnit-main: #0067ab;
+    --monnit-second: #08afe6;
+    --monnit-gray: #515356;
+}
+.nav-icon {
+    width:100%;
+    height:auto;
+    display:inline-block
+}
+.nav-icon:hover {
+    filter: sepia(99);
+    cursor: pointer;
+}
+ .m-icons {
+display: flex;
+margin-left:auto;
+margin-right:10px;
+width: 140px;
+
+} 
+
+.web-icons {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  
+    background-repeat: no-repeat;
+}
+.header-icons {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    fill:var(--monnit-main);
+}
+
+.web-icons,
+path:first-child {
+    fill: white;
+}
+
+.social-foot
+svg:hover {
+    fill: var(--monnit-main);
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+.top-ico,
+path:first-child>svg path {
+    fill: var(--monnit-second);
+}
+.icon { 
+    width:30px; 
+    height:30px;
+    fill:white;
+  }

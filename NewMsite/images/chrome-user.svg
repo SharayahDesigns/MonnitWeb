@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-d2547410-890a-4569-b385-3efd5b105b74" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="uuid-67277a2d-ac28-45ef-8724-5058b9e99c4b" x1="5.96" y1="51.23" x2="95.21" y2="51.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0067ab"/>
+      <stop offset=".02" stop-color="#0e6faf"/>
+      <stop offset=".07" stop-color="#3084ba"/>
+      <stop offset=".09" stop-color="#3d8cbf"/>
+      <stop offset=".12" stop-color="#408dbf"/>
+      <stop offset=".14" stop-color="#4c93c2"/>
+      <stop offset=".17" stop-color="#5e9dc6"/>
+      <stop offset=".18" stop-color="#6ea5ca"/>
+      <stop offset=".24" stop-color="#639fc7"/>
+      <stop offset=".34" stop-color="#4791c1"/>
+      <stop offset=".35" stop-color="#4590c1"/>
+      <stop offset=".37" stop-color="#4c93c2"/>
+      <stop offset=".4" stop-color="#5f9ec7"/>
+      <stop offset=".44" stop-color="#7fafcf"/>
+      <stop offset=".45" stop-color="#8db7d3"/>
+      <stop offset=".49" stop-color="#72a9ce"/>
+      <stop offset=".52" stop-color="#67a4cd"/>
+      <stop offset=".59" stop-color="#72abd0"/>
+      <stop offset=".65" stop-color="#5e9fca"/>
+      <stop offset=".89" stop-color="#3d8cbf"/>
+      <stop offset=".89" stop-color="#3a8abe"/>
+      <stop offset=".94" stop-color="#1a77b3"/>
+      <stop offset=".97" stop-color="#076bad"/>
+      <stop offset="1" stop-color="#0067ab"/>
+    </linearGradient>
+  </defs>
+  <path d="m82.46,6.6H18.71c-7.03,0-12.75,5.72-12.75,12.75v63.75c0,7.03,5.72,12.75,12.75,12.75h63.75c7.03,0,12.75-5.72,12.75-12.75V19.35c0-7.03-5.72-12.75-12.75-12.75Zm-31.88,11.98c10.14,0,18.36,8.22,18.36,18.36s-8.22,18.36-18.36,18.36-18.36-8.22-18.36-18.36,8.22-18.36,18.36-18.36Zm28.73,65.28H21.85c-2.15,0-3.91-1.75-3.91-3.91,0-11.36,9.21-20.57,20.57-20.57h24.15c11.36,0,20.57,9.21,20.57,20.57,0,2.15-1.75,3.91-3.91,3.91Z" fill="url(#uuid-67277a2d-ac28-45ef-8724-5058b9e99c4b)"/>
+</svg>
