@@ -391,8 +391,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const burger = document.getElementById("burger");
 const nav = document.getElementById("main-nav");
 
-burger.addEventListener("click", function() {
-  this.classList.toggle("is-open");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("is-open");
   nav.classList.toggle("is-open");
 });
 
@@ -400,8 +400,8 @@ burger.addEventListener("click", function() {
 const acc = document.getElementsByClassName("accordion-m");
 let currentAccordion = null;
 
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (const item of acc) {
+  item.addEventListener("click", function() {
     if (this === currentAccordion) {
       // If the clicked accordion is already open, close it
       this.classList.remove("active123");
@@ -423,7 +423,8 @@ for (let i = 0; i < acc.length; i++) {
       currentAccordion = this;
     }
   });
-};
+}
+
 
 // Cleanup on visibilitychange event
 document.addEventListener("visibilitychange", function() {
