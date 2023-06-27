@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Monnit Software</title>
     <link rel="icon" type="image/x-icon" href="/NewMsite/images/Monnit-Fav.ico">
-    <meta name="description" content="">
+    <meta name="description" content="Monnit Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" as="style" href="style.css" onload="this.onload=null;this.rel='stylesheet'">
 </head>
@@ -84,24 +84,39 @@
                         </li>
                     </ul>
                 </nav>
-                <img id="logo-image" src="./images/logo.png" alt="Image" loading="lazy" width="264px"
+                <img id="logo-image" src="./images/logo.png" alt="Image"  style="width:250px; height:40px"
                     fetchpriority="high">
                 
             </div>
 
             <div class="m-icons">
-                <div class="nav-icon">                
-                    <img alt="Image" loading="lazy" src="./images/chrome-phone.svg">
+                <div class="nav-icon">  
+                    <svg class=" social-icons">
+                            <use href="sprite-sheet.svg#phone-ico"></use>
+                        </svg>                             
                 </div>
+
                 <div class="nav-icon">
-                    <img alt="Image" loading="lazy" src="./images/chrome-mail.svg">
+                    <svg
+                    class=" social-icons">
+                    <use href="sprite-sheet.svg#mail-ico"></use>
+                </svg> 
                 </div>
+
                 <div class="nav-icon">
-                    <img alt="Image" loading="lazy" src="./images/chrome-shop.svg">
+                    <svg
+                    class=" social-icons">
+                    <use href="sprite-sheet.svg#shop-ico"></use>
+                </svg> 
                 </div>
+
                 <div class="nav-icon">
-                    <img alt="Image" loading="lazy" src="./images/chrome-user.svg">
+           <svg
+                    class=" social-icons">
+                    <use href="sprite-sheet.svg#user-ico"></use>
+                </svg> 
                 </div>
+
             </div>
             <div id="formit" style="margin-right:30px">
                 <input class="form-control mr-sm-2 search" id="searchProductText" name="searchText" type="search"
@@ -202,11 +217,7 @@
         </div>
        
     </header>
-    <img class="hero-img" src="./images/explosive-atmosphere-monitoring (1).webp" >
-    <i class="sprite sprite-chrome-top-blue-01"></i>
-    <i class="sprite sprite-chrome-top-blue-02"></i>
-    <i class="sprite sprite-chrome-top-blue-03"></i>
-    <i class="sprite sprite-chrome-top-blue-04"></i>
+   
 </div>
 
 
@@ -219,7 +230,10 @@
                 <div class="row-align">
 
                     <div class="icon">
-                        <img src="./images/spriteSheet_chrome-rocket.svg">
+                        <svg
+                    class=" social-icons">
+                    <use href="sprite-sheet.svg#rocket-ico"></use>
+                </svg> 
                     </div>
                     <h3 class="getstarted">Get Started</h3>
                 </div>
@@ -236,7 +250,10 @@
                 <div class="row-align">
 
                     <div class="icon">
-                        <img src="./images/spriteSheet_chrome-info.svg">
+                        <svg
+                    class=" social-icons">
+                    <use href="sprite-sheet.svg#info-ico"></use>
+                </svg> 
                     </div>
                     <h3 class="about">About</h3>
                 </div>
@@ -248,7 +265,10 @@
             </div>
             <div class="footer-col">
                 <div class="row-align">
-                    <div class="icon"><img src="./images/spriteSheet_chrome-phone.svg"> </div>
+                    <div class="icon"> <svg
+                    class=" social-icons">
+                    <use href="sprite-sheet.svg#support"></use>
+                </svg> </div>
                     <h3>Support</h3>
                 </div>
                 <a href="/contact/" title="contact us">Contact</a>
@@ -327,7 +347,7 @@
     </footer>
     <script>
 
-     // Dropdown functionality
+    // Dropdown functionality
 document.addEventListener("click", (e) => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]");
   if (!isDropdownButton && e.target.closest("[data-dropdown]")) return;
@@ -368,44 +388,50 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Mobile Menu
-let burger = document.getElementById("burger");
-let nav = document.getElementById("main-nav");
+const burger = document.getElementById("burger");
+const nav = document.getElementById("main-nav");
 
-burger.addEventListener("click", function (e) {
+burger.addEventListener("click", function() {
   this.classList.toggle("is-open");
   nav.classList.toggle("is-open");
 });
 
 // Mobile drop-down menu
-var acc = document.getElementsByClassName("accordion-m");
-var currentAccordion = null;
+const acc = document.getElementsByClassName("accordion-m");
+let currentAccordion = null;
 
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
     if (this === currentAccordion) {
       // If the clicked accordion is already open, close it
       this.classList.remove("active123");
-      var panel = this.nextElementSibling;
+      const panel = this.nextElementSibling;
       panel.style.display = "none";
       currentAccordion = null;
     } else {
       // Close the currently open accordion (if any)
       if (currentAccordion !== null) {
         currentAccordion.classList.remove("active123");
-        var currentPanel = currentAccordion.nextElementSibling;
+        const currentPanel = currentAccordion.nextElementSibling;
         currentPanel.style.display = "none";
       }
 
       // Open the clicked accordion
       this.classList.add("active123");
-      var panel = this.nextElementSibling;
+      const panel = this.nextElementSibling;
       panel.style.display = "block";
       currentAccordion = this;
     }
   });
-}
+};
 
-window.addEventListener("load", function (e) {
+// Cleanup on visibilitychange event
+document.addEventListener("visibilitychange", function() {
+  // Cleanup code here, if needed
+});
+
+// Reset burger menu on page load
+window.addEventListener("load", function() {
   burger.classList.remove("is-open");
 });
 

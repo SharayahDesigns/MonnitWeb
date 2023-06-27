@@ -138,15 +138,22 @@ body {
 }
 
 .nav-icon:hover {
-  filter: sepia(99);
   cursor: pointer
 }
+.nav-icon >svg {
+  width:40px;
+  height:40px;
+  fill:var(--monnit-main);
+}
+.nav-icon:hover svg, .nav-icon {
+  fill:var(--monnit-second);
+}
+
 
 .m-icons {
   display: flex;
   margin-left: auto;
   margin-right: 10px;
-  width: 140px
 }
 
 .header-icons,
@@ -181,18 +188,19 @@ path:first-child {
 path:first-child>svg path {
   fill: var(--monnit-second)
 }
-
 .icon {
   width: 30px;
   height: 30px;
-  fill: white
+  fill: #e5e5e5
 }
-
+.icon > svg {
+  width:30px;
+  height:30px;
+}
 #burger,
 .main-nav {
   display: none
 }
-
 .monnit-header {
   display: flex;
   align-items: center;
