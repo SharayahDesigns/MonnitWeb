@@ -27,6 +27,16 @@ html {
   margin-top: auto
 }
 
+.hero-img {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+   height: 50%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+
+}
+
 a,
 abbr,
 acronym,
@@ -268,8 +278,14 @@ path:first-child>svg path {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-10px);
-  transition: opacity .2s ease-in-out, transform 150ms ease-in-out
+  transition: opacity .2s ease-in-out, transform 150ms ease-in-out;
+  z-index:9;
 }
+.dorpdown-menu:nth-child(1){
+  z-index:9999; 
+  position:relative
+}
+
 
 .dropdown.active>.link+.dropdown-menu {
   opacity: 1;
@@ -511,6 +527,35 @@ footer h2 {
   height: 77px;
   display: flex
 }
+.sprite {
+  background-image: url(/spritesheet-top.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-chrome-top-blue-01 {
+  width: 35px;
+  height: 35px;
+  background-position: -5px -5px;
+}
+
+.sprite-chrome-top-blue-02 {
+  width: 77px;
+  height: 77px;
+  background-position: -92px -5px;
+}
+
+.sprite-chrome-top-blue-03 {
+  width: 77px;
+  height: 77px;
+  background-position: -5px -92px;
+}
+
+.sprite-chrome-top-blue-04 {
+  width: 77px;
+  height: 77px;
+  background-position: -92px -92px;
+}
 
 
 
@@ -714,3 +759,4 @@ footer h2 {
     padding: 11px 0
   }
 }
+
