@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/NewMsite/images/Monnit-Fav.ico">
     <meta name="description" content="Monnit Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" as="style" href="style.css" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="style.css"  >
 </head>
 
 <body>
@@ -17,13 +17,13 @@
 
         <div class="monnit-header">
             <div class="logo-container">
-                <button id="burger" class="open-main-nav">
+                <button id="burger" role="button" class="open-main-nav" aria-label="menu">
                     <span class="burger"></span>
                 </button>
                 <nav class="main-nav" id="main-nav">
                     <ul>
                         <li>
-                            <a class="accordion-m" href="#">Products</a>
+                            <a class="accordion-m" href="#" aria-label="products">Products</a>
                             <div class="panel">
                                 <a>Sensors</a>
                                 <a>Gateways</a>
@@ -33,7 +33,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="accordion-m">Applications</a>
+                            <a href="#" class="accordion-m" aria-label="applications">Applications</a>
                             <div class="panel ">
                                 <a>By Industry</a>
                                 <a>By Use Case</a>
@@ -41,7 +41,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="accordion-m">Services</a>
+                            <a href="#" class="accordion-m" aria-label="services">Services</a>
                             <div class="panel">
                                 <a>Product Customization</a>
                                 <a>New Product Development</a>
@@ -50,7 +50,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="accordion-m">Our Partners</a>
+                            <a href="#" class="accordion-m" aria-label="our products">Our Partners</a>
                             <div class="panel">
                                 <a>Partners With Monnit</a>
                                 <a>Current Partners</a>
@@ -58,7 +58,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="accordion-m">Support</a>
+                            <a href="#" class="accordion-m" aria-label="support">Support</a>
                             <div class="panel">
                                 <a>Monnit Support</a>
                                 <a>Monnit Knowledgbase</a>
@@ -70,7 +70,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="accordion-m">About</a>
+                            <a href="#" class="accordion-m" aria-label="about">About</a>
                             <div class="panel">
                                 <a>Monnit</a>
                                 <a>Contact</a>
@@ -84,7 +84,7 @@
                         </li>
                     </ul>
                 </nav>
-                <img id="logo-image" src="./images/logo.png" alt="Image"  style="width:250px; height:40px"
+                <img id="logo-image" src="./images/logo.webp" alt="Image"  style="width:250px; height:40px"
                     fetchpriority="high">
                 
             </div>
@@ -126,89 +126,89 @@
 
         <div class="menu-dd-nav">
             <div class="dropdown" data-dropdown>
-                <button class="link hover-underline-animation activeAnimate " data-dropdown-button>Products</button>
+                <button class="link hover-underline-animation activeAnimate " role="button" aria-labelledby="product-label" data-dropdown-button>Products</button>
                 <div class="dropdown-menu product-menu">
                     <div >
                         <div class="dropdown-links">
-                            <a href="#" class="link">Sensors</a>
-                            <a href="#" class="link">Gateways</a>
-                            <a href="#" class="link">Software</a>
-                            <a href="#" class="link">Accessories</a>
-                            <a href="#" class="link">All Products</a>
+                            <a href="#" class="link" aria-label="sensors">Sensors</a>
+                            <a href="#" class="link" aria-label="gateways">Gateways</a>
+                            <a href="#" class="link" aria-label="software">Software</a>
+                            <a href="#" class="link" aria-label="accessories">Accessories</a>
+                            <a href="#" class="link" aria-label="all products">All Products</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="dropdown" data-dropdown>
-                <button class="link hover-underline-animation " data-dropdown-button>Applications</button>
+                <button class="link hover-underline-animation " role="button" aria-labelledby="application-label" data-dropdown-button>Applications</button>
                 <div class="dropdown-menu ">
                     <div>
 
                         <div class="dropdown-links">
-                            <a href="#" class="link">By Industry</a>
-                            <a href="#" class="link">By Use Case</a>
-                            <a href="#" class="link">Monnit Booklets</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dropdown" data-dropdown>
-                <button class="link hover-underline-animation " data-dropdown-button>Services</button>
-                <div class="dropdown-menu ">
-                    <div>
-                        <div class="dropdown-links">
-                            <a href="#" class="link">Product Customization</a>
-                            <a href="#" class="link">New Product Development</a>
-                            <a href="#" class="link">Training Services</a>
-                            <a href="#" class="link">Installation Services</a>
+                            <a href="#" class="link" aria-label="by industry">By Industry</a>
+                            <a href="#" class="link" aria-label="by use case">By Use Case</a>
+                            <a href="#" class="link" aria-label="monnit booklets">Monnit Booklets</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="dropdown" data-dropdown>
-                <button class="link hover-underline-animation " data-dropdown-button>Partners</button>
+                <button class="link hover-underline-animation " role="button" data-dropdown-button aria-labelledby="service-label" >Services</button>
                 <div class="dropdown-menu ">
                     <div>
                         <div class="dropdown-links">
-                            <a href="#" class="link ">Partners With Monnit</a>
-                            <a href="#" class="link">Current Partners</a>
-                            <a href="#" class="link">Monnit Distributors</a>
+                            <a href="#" class="link" aria-label="product customization">Product Customization</a>
+                            <a href="#" class="link" aria-label="new product development">New Product Development</a>
+                            <a href="#" class="link" aria-label="training services">Training Services</a>
+                            <a href="#" class="link" aria-label="installation services">Installation Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" data-dropdown>
+                <button class="link hover-underline-animation " role="button" data-dropdown-button aria-labelledby="partners-label" >Partners</button>
+                <div class="dropdown-menu ">
+                    <div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link " aria-label="partners with monnit">Partners With Monnit</a>
+                            <a href="#" class="link" aria-label="current partners">Current Partners</a>
+                            <a href="#" class="link" aria-label="monnit distribution">Monnit Distributors</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="dropdown" data-dropdown>
-                <button class="link hover-underline-animation " data-dropdown-button>Support</button>
+                <button class="link hover-underline-animation " role="button" data-dropdown-button aria-labelledby="support-label" >Support</button>
                 <div class="dropdown-menu ">
                     <div>
                         <div class="dropdown-links">
-                            <a href="#" class="link">Monnit Support</a>
-                            <a href="#" class="link">Monnit Knowledgebase</a>
-                            <a href="#" class="link">FAQs</a>
-                            <a href="#" class="link">Documentation</a>
-                            <a href="#" class="link">Downloads</a>
-                            <a href="#" class="link">Videos</a>
-                            <a href="#" class="link">API</a>
+                            <a href="#" class="link" aria-label="monnit support">Monnit Support</a>
+                            <a href="#" class="link" aria-label="monnit knowledgebase">Monnit Knowledgebase</a>
+                            <a href="#" class="link" aria-label="faqs">FAQs</a>
+                            <a href="#" class="link" aria-label="Documentation">Documentation</a>
+                            <a href="#" class="link" aria-label="downloads">Downloads</a>
+                            <a href="#" class="link" aria-label="videos">Videos</a>
+                            <a href="#" class="link" aria-label="api">API</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="dropdown" data-dropdown>
-                <button class="link hover-underline-animation  " data-dropdown-button>About Us</button>
+                <button class="link hover-underline-animation  " role="button" data-dropdown-button aria-labelledby="about-label" >About Us</button>
                 <div class="dropdown-menu ">
                     <div>
                         <div class="dropdown-links">
-                            <a href="#" class="link">Monnit</a>
-                            <a href="#" class="link">Contact</a>
-                            <a href="#" class="link">Webinars</a>
-                            <a href="#" class="link">Awards</a>
-                            <a href="#" class="link">Investors</a>
-                            <a href="#" class="link">Careers</a>
-                            <a href="#" class="link">Newsletter</a>
-                            <a href="#" class="link">How Monnit Works</a>
+                            <a href="#" class="link" aria-label="monnit">Monnit</a>
+                            <a href="#" class="link" aria-label="contact">Contact</a>
+                            <a href="#" class="link" aria-label="webinars">Webinars</a>
+                            <a href="#" class="link" aria-label="awards">Awards</a>
+                            <a href="#" class="link" aria-label="investors">Investors</a>
+                            <a href="#" class="link" aria-label="careers">Careers</a>
+                            <a href="#" class="link" aria-label="newsletter">Newsletter</a>
+                            <a href="#" class="link" aria-label="how monnit works">How Monnit Works</a>
                         </div>
                     </div>
                 </div>
@@ -238,12 +238,12 @@
                     <h3 class="getstarted">Get Started</h3>
                 </div>
 
-                <a href="/products/sensors/" title="wireless sensors">Products</a>
-                <a href="/applications/" title="wireless sensor applications">Applications</a>
-                <a href="/labs/" title="new product development">Monnit Labs</a>
-                <a href="/webinars/" title="free webinars">Webinars</a>
+                <a href="/products/sensors/" title="wireless sensors" aria-label="products">Products</a>
+                <a href="/applications/" title="wireless sensor applications" aria-label="applications">Applications</a>
+                <a href="/labs/" title="new product development" aria-label="monnit labs">Monnit Labs</a>
+                <a href="/webinars/" title="free webinars" aria-label="webinars">Webinars</a>
                 <a href="https://monnit.blob.core.windows.net/site/documents/catalogs/all-products.pdf" target="_blank"
-                    rel="noopener" title="product catalog">Product Catalog</a>
+                    rel="noopener" title="product catalog" aria-label="product catalog">Product Catalog</a>
             </div>
 
             <div class="footer-col">
@@ -257,11 +257,11 @@
                     </div>
                     <h3 class="about">About</h3>
                 </div>
-                <a href="/about-us/" title="about Monnit Corp.">Monnit</a>
-                <a href="/blog/" title="industry news and updates">News</a>
-                <a href="/awards/" title="awards">Awards</a>
-                <a href="/careers/" title="careers at Monnit">Careers</a>
-                <a href="/how-monnit-works/" title="how it works">How it Works</a>
+                <a href="/about-us/" title="about Monnit Corp." aria-label="monnit">Monnit</a>
+                <a href="/blog/" title="industry news and updates" aria-label="news">News</a>
+                <a href="/awards/" title="awards" aria-label="awards">Awards</a>
+                <a href="/careers/" title="careers at Monnit" aria-label="careers">Careers</a>
+                <a href="/how-monnit-works/" title="how it works" aria-label="how it workds">How it Works</a>
             </div>
             <div class="footer-col">
                 <div class="row-align">
@@ -271,11 +271,11 @@
                 </svg> </div>
                     <h3>Support</h3>
                 </div>
-                <a href="/contact/" title="contact us">Contact</a>
-                <a href="/policy/returns/" title="return policy">Returns</a>
-                <a href="/support/" title="support">Support</a>
-                <a href="/policy/" title="legal">Legal</a>
-                <a href="/support/frequently-asked-questions/" title="frequently asked questions">FAQs</a>
+                <a href="/contact/" title="contact us" aria-label="contact">Contact</a>
+                <a href="/policy/returns/" title="return policy" aria-label="returns">Returns</a>
+                <a href="/support/" title="support" aria-label="support">Support</a>
+                <a href="/policy/" title="legal" aria-label="legal">Legal</a>
+                <a href="/support/frequently-asked-questions/" title="frequently asked questions" aria-label="faqs">FAQs</a>
             </div>
             <div class="footer-col align">
                 <div>
@@ -284,18 +284,18 @@
                 <div class="social-foot">
 
                     <a href="https://twitter.com/monnitsensors" target="_blank" rel="noopener nofollow"><svg
-                            class="web-icons social-icons">
+                            class="web-icons social-icons" aria-label="twitter">
                             <use href="sprite-sheet.svg#twitter"></use>
                         </svg></a>
-                    <a href="https://www.facebook.com/monnitsensors" target="_blank" rel="noopener nofollow"><svg
+                    <a href="https://www.facebook.com/monnitsensors" target="_blank" rel="noopener nofollow" aria-label="facebook"><svg
                             class="web-icons social-icons">
                             <use href="sprite-sheet.svg#facebook"></use>
                         </svg></a>
                     <a href="https://www.linkedin.com/companies/monnit-corp-/" target="_blank"
-                        rel="noopener nofollow"><svg class="web-icons social-icons">
+                        rel="noopener nofollow" aria-label="linkedin"><svg class="web-icons social-icons">
                             <use href="sprite-sheet.svg#linkedin"></use>
                         </svg></a>
-                    <a href="https://www.youtube.com/monnitsensors" target="_blank" rel="noopener nofollow"><svg
+                    <a href="https://www.youtube.com/monnitsensors" target="_blank" rel="noopener nofollow" aria-label="youtube"><svg
                             class="web-icons social-icons">
                             <use href="sprite-sheet.svg#youtube"></use>
                         </svg></a>
@@ -320,7 +320,7 @@
                             </div>
                         </form>
                         <div class='swanky_title__social'>
-                            <a href='#' target='_blank'>
+                            <a href='#' target='_blank' aria-label="sign up">
                                 <div class='slide'>
                                     <div class='arrow'>
                                         <div class='stem'></div>
@@ -337,10 +337,10 @@
         </div>
 
         <div class=" bottom-footer">
-            <a href="tel:801-561-5555">801-561-5555</a>&nbsp; | &nbsp;<a
-                href="mailto:info@monnit.com">info@monnit.com</a><br>
-            <a href="/policy/privacy/" title="privacy">Privacy Policy</a>&nbsp; | &nbsp;<a href="/sitemap.xml"
-                title="sitemap">Sitemap</a>&nbsp; | &nbsp;
+            <a href="tel:801-561-5555" aria-label="phone">801-561-5555</a>&nbsp; | &nbsp;<a
+                href="mailto:info@monnit.com" aria-label="email">info@monnit.com</a><br>
+            <a href="/policy/privacy/" title="privacy" aria-label="privacy policy">Privacy Policy</a>&nbsp; | &nbsp;<a href="/sitemap.xml"
+                title="sitemap" aria-label="sitemap">Sitemap</a>&nbsp; | &nbsp;
             @ Monnit Corporation
         </div>
 
