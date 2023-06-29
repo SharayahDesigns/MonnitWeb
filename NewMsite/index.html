@@ -9,6 +9,8 @@
     <meta name="description" content="Monnit Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"  >
+  <link rel="html" href="buy-product.html">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
@@ -217,8 +219,23 @@
         </div>
        
     </header>
-   
+
+<!--  BODY CONTENTS -->
+
+    <div id="includeHtml"></div>
+
+
+    <!-- Body End -->
 </div>
+
+
+
+
+
+
+
+
+
 
 
     <!--/////////     FOOTER    ///////////-->
@@ -435,6 +452,10 @@ document.addEventListener("visibilitychange", function() {
 window.addEventListener("load", function() {
   burger.classList.remove("is-open");
 });
+
+$(function() {
+         $("#includeHtml").load("buy-product.html");
+      });
 
 
     </script>
