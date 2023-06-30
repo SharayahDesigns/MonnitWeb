@@ -14,25 +14,37 @@
 
 <div class="buyProduct_Container">
 
+    <div class="product-tree"> 
+        <svg class="small-icon">
+        <use href="sprite-sheet.svg#arrow-left"></use>
+    </svg>  <span>Wireless Temp Sensors</span> </div>
 <!--------------------------
      Product Selections 
     -------------------------->
     <div class="product-selection" >
-        <h1>Standard Temperature Sensor</h1>
-        <h4>Enterprise Wireless</h4>
-        <h5>Wireless IoT Temperature Sensor - AA Battery Powered</h5>
+        <span>Standard Temperature Sensor</span>
+        <div class="select-wrapper">
+            <div class="select">
+                <div class="select__trigger"><span>Enterprise Wireless</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                    <span class="custom-option" data-value="Industrial Wireless">Industrial Wireless</span>
+                    <span class="custom-option" data-value="Commercial Wireless">Commercial Wireless</span>
+                    <span class="custom-option" data-value="IECEx">IECEx</span>
+                </div>
+            </div>
+        </div>
+        <!-- <select>
+            <option value="Enterprise Wireless">Enterprise Wireless</option>
+            <option value="Industrial Wireless">Industrial Wireless</option>
+            <option value="Commercial Wireless">Commercial Wireless</option>
+            <option value="IECEx">IECEx</option>
+        </select> -->
+      
+        <h3>Wireless IoT Temperature Sensor - AA Battery Powered</h3>
 
-    <!-- Select Length     -->
-    <div>Lead Length</div>
-
-  <!-- Select Certification  -->
-  <div>Certification</div>
-
-    <!-- Select Power -->
-    <div>Certification</div>
-
-     <!-- Select Enclosure -->
-     <div>Enclosure</div>
+   
 
     </div>
     <!-- -------------END -->
@@ -42,22 +54,61 @@
     -------------------------->
 
     <div class="product-summary" >
-        <div class="sensor-pic">
+        <figure>
+            <img src="./images/Sensor.webp" alt="Enterprise Sensor" style="width:100%">
+            <!-- <figcaption>Enterprise Sensor</figcaption> -->
+          </figure>
+        <!-- <div class="sensor-pic">
         <img alt="sensor" width="150" height="auto" src="./images/Sensor.webp" />
-    </div>
+    </div> -->
         <div>Wireless IoT Temperature Sensor - AA Battery Powered</div>
         <div>$116.00</div>
 <button>Next</button>
-        <div>included list</div>
+        <div>Included </div>
       
     </div> 
+
       <!-- -------------END -->
 
 </div>
 
+<section class="buy-details fixed-bottom nav-bar">
+    <div class="price-show">
+        <span style="font-weight: bold; font-size: 25px;">$116.00</span>
+        <span style="color:#0067ab">Show Details</span>
+    </div>
+    <div>
+        <button class="monnit-btn">Add to Cart</button>
+    </div>
+</section>
 
+<script>
 
-        
+// document.querySelector('.select-wrapper').addEventListener('click', function () {
+//     this.querySelector('.select').classList.toggle('open');
+// })
+for (const dropdown of document.querySelectorAll(".select-wrapper")) {
+    dropdown.addEventListener('click', function() {
+        this.querySelector('.select').classList.toggle('open');
+    })
+}
+
+// window.addEventListener('click', function (e) {
+//     const select = document.querySelector('.select')
+//     if (!select.contains(e.target)) {
+//         select.classList.remove('open');
+//     }
+// });
+
+window.addEventListener('click', function(e) {
+    for (const select of document.querySelectorAll('.select')) {
+        if (!select.contains(e.target)) {
+            select.classList.remove('open');
+        }
+    }
+});
+</script>
 
     </body>
+  
 </html>

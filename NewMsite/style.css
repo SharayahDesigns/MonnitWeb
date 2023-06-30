@@ -3,7 +3,9 @@
   --monnit-second: #08afe6;
   --monnit-gray: #515356;
 }
-
+*, *:after, *:before {
+  box-sizing: border-box;
+}
 
 
 .dropdown,
@@ -489,25 +491,174 @@ footer h2 {
   background-position: -92px -92px;
 }
 
-/*//////////// Product Page  */
+/*//////////// Product Page  ///////////////////////////  */
 .buyProduct_Container {
   width:100%; 
   height:100%;
   position: relative;
   display:flex;
+  flex-direction: column;
   padding: 1rem;
   justify-content: space-around;
+  background:#f5f6f7;
 
 }
 .product-summary {
-  border-radius: 1rem;
+  /* border-radius: 1rem;
    background:#F2F2F2;
-   padding:.5rem;
+   padding:.5rem; */
 }
 .sensor-pic {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.buy-details {
+ background-color:#f9f9f9;
+ box-shadow: 0 0 .5rem rgba(0,0,0,.3)!important;
+}
+.fixed-bottom {
+  bottom: 0px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1030;
+}
+.nav-bar {
+  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:1.5rem 3rem;
+}
+.monnit-btn {
+  border:none;
+  padding: 1rem;
+  background-color: var(--monnit-main);
+  color:white;
+  border-radius: 4px;
+}
+.price-show{
+display: flex;
+flex-direction: column;
+}
+.product-selection span:first-child {
+  font-size:1.5rem;
+}
+.product-tree > svg {
+  width:12px;
+  height:12px;
+  fill:#515356;
+}
+.product-tree {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+.select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  padding:20px;
+}
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-color: #394a6d;
+}
+.select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3b3b3b;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  cursor: pointer;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-color: var(--monnit-main);
+}
+.custom-options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 2px solid #394a6d;
+  border-top: 0;
+  background: #fff;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+.select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 0 22px 0 22px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #3b3b3b;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.custom-option:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+.custom-option.selected {
+  color: #ffffff;
+  background-color: #305c91;
+}
+
+.arrow {
+     position: relative;
+     height: 15px;
+     width: 15px;
+}
+ .arrow::before, .arrow::after {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     width: 0.15rem;
+     height: 100%;
+     transition: all 0.5s;
+}
+ .arrow::before {
+     left: -5px;
+     transform: rotate(45deg);
+     background-color: #394a6d;
+}
+ .arrow::after {
+     left: 5px;
+     transform: rotate(-45deg);
+     background-color: #394a6d;
+}
+ .open .arrow::before {
+     left: -5px;
+     transform: rotate(-45deg);
+}
+ .open .arrow::after {
+     left: 5px;
+     transform: rotate(45deg);
 }
 
 @media (max-width: 680px) {
