@@ -21,7 +21,9 @@
                 Product Selections 
     -------------------------->
         <div class="product-selection">
-            <span>Standard Temperature Sensor</span>
+            <span style="font-size:1.1rem">Standard Temperature Sensor</span>
+<div class="title-sensor" style="color:#0067ab; font-size:1.2rem; margin-top:20px; display:flex;justify-content: center;" >Wireless IoT Temperature Sensor - AA Battery Powered</div>
+
             <div class="select-wrapper">
                 <div class="select">
                     <div class="select__trigger"><span class="headtag">Enterprise Wireless</span>
@@ -35,9 +37,9 @@
                 </div>
             </div>
 
-            <h3 class="title-sensor">Wireless IoT Temperature Sensor - AA Battery Powered</h3>
-            <div>Part #: MNS2-9-W2-TS-ST</div>
-            <div>Frequency: 900 MHz</div>
+            
+            <!-- <div>Part #: MNS2-9-W2-TS-ST</div>
+            <div>Frequency: 900 MHz</div> -->
         </div>
        
 
@@ -104,35 +106,39 @@
 
 
 
-            <div >
+            <div class="boxlet" style="background: #dddddd;
+    padding: 10px;
+    border-radius: 5px;">
 <div style="margin-top:10px;"><b>Includes:</b></div>
             <div class="includes" style="display: flex;gap:10px; justify-content: center;">
                 <div class="in1">Wireless Sensor</div>
                 <div class="in1">Mounting Hardware</div>
                 <div class="in1">2xAA Batteries</div>
             </div>         
-        </div>
+       
 
         <div class="chooseFile" style="margin-top:20px">
-            <svg id="minus-q" class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <svg  class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <use xlink:href="sprite-sheet.svg#file"></use>
             </svg>
 <a>Data Sheet ALTA Temperature Sensors</a>
         </div>
 
         <div class="chooseFile">
-            <svg id="minus-q" class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <use xlink:href="sprite-sheet.svg#file"></use>
             </svg>
 <a>Safety Manual - IECEx</a>
         </div>
  
         <div class="chooseFile">
-            <svg id="minus-q" class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <use xlink:href="sprite-sheet.svg#file"></use>
             </svg>
 <a>User Guide - ALTA Temperature Sensors</a>
         </div>
+ </div>
+
         </div>
        
 
@@ -217,10 +223,12 @@
     <div class="q-box-container">
         <label>Quantity:</label>
         <div style="display:flex; align-items: center; gap:20px;">
+<!-- Minus -->
             <svg id="minus-q" class="add-sub-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <use xlink:href="sprite-sheet.svg#new_minus"></use>
             </svg>
             <input type="number" value="1" step="1" min="1" max="10000" class="q-box" />
+<!-- Add -->
             <svg id="add-q" class="add-sub-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <use xlink:href="sprite-sheet.svg#new_add"></use>
             </svg>
@@ -302,14 +310,12 @@ for (const dropdown of document.querySelectorAll(".select-wrapper")) {
         if (currentValue > parseInt(input.min)) {
             currentValue--;
         }
-
         input.value = currentValue;
         updateTotalValue(currentValue);
     });
 
     addButton.addEventListener('click', function() {
         let currentValue = parseInt(input.value);
-
         if (currentValue < parseInt(input.max)) {
             currentValue++;
         }
@@ -319,8 +325,7 @@ for (const dropdown of document.querySelectorAll(".select-wrapper")) {
 
   function updateTotalValue(quantity) {
   const price = parseInt(totalSpan.getAttribute('data-value'));
-  const selectedCost = parseInt(totalSelected); // Access the totalSelected variable
-  const total = (price + selectedCost) * quantity; // Add selectedCost to the price
+  const total = price  * quantity; 
   totalSpan.textContent = `$${total.toFixed(2)}`;
 }
 
@@ -355,7 +360,8 @@ function showSlides(n) {
 }
  
     </script>
-<style>body {
+<style>
+body {
     font-family: Arial;
     margin: 0;
   }
