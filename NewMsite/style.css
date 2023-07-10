@@ -92,7 +92,7 @@ body {
 
 .web-icons,
 path:first-child {
-  fill: white;
+  fill: #0067ab;
 }
 
 .social-foot svg:hover {
@@ -492,7 +492,8 @@ footer h2 {
   background-position: -92px -92px;
 }
 
-/*//////////// Product Page  ///////////////////////////  */
+/*//////////// SKU Page  ///////////////////////////  */
+
 .buyProduct_Container {
   width:100%; 
   height:100%;
@@ -503,11 +504,6 @@ footer h2 {
   justify-content: space-around;
   background:#f5f6f7;
 
-}
-.product-summary {
-  /* border-radius: 1rem;
-   background:#F2F2F2;
-   padding:.5rem; */
 }
 .sensor-pic {
   display: flex;
@@ -583,13 +579,12 @@ flex-direction: column;
   font-weight: 300;
   color: #3b3b3b;
   height: 48px;
-  /* line-height: 60px; */
   background: #ffffff;
   cursor: pointer;
   border-width: 2px 0 2px 0;
   border-style: solid;
   border-color: var(--monnit-main);
-}
+} 
 .custom-options {
   position: absolute;
   display: block;
@@ -726,14 +721,17 @@ color:#0067ab;
   font-size: 18px !important;;
 }
 .title-sensor {
-    color: #0067ab;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: #0067ab;
     font-size: 1.2rem;
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    width: 100%;
-    text-align: center;
     font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
 }
 .boxlet {
 background: #E6E6E8;
@@ -749,7 +747,7 @@ height: 60px;
 .sm-box-container {
 display: flex;
 width:100%;
-justify-content: space-around;
+justify-content: space-evenly;
 }
  #box {
       position:fixed;
@@ -761,11 +759,11 @@ justify-content: space-around;
 z-index:99;
     }
    #box.is-active {
-        height: 300px;
+        height: 249px;
 border-top: 2px solid #0067ab;
     }
 
-/* Photo Slider */
+/*------ Photo Slider ------ */
 
  
   img {
@@ -848,6 +846,20 @@ border-top: 2px solid #0067ab;
   .sm-img:hover {
     opacity: 1;
   }
+  .sm-img.cursor.active {
+    border:2px solid #0067ab;
+  }
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 680px) {
 
   .main-nav,
@@ -885,6 +897,7 @@ border-top: 2px solid #0067ab;
 
   .m-icons {
     margin-left: inherit;
+    gap:10px;
   }
 
   .footer-col {
