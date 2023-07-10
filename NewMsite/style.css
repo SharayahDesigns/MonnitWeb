@@ -726,18 +726,6 @@ color:#0067ab;
   font-size: 18px !important;;
 }
 .title-sensor {
-  /* width: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-  padding: 0.6rem;
-  text-align: center;
-  margin-top: 0;
-  line-height: 1.5;
-  /* border-radius: 5px; */
-  /* color: #0067ab;
-  border: 2px solid #0067ab78;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */ 
     color: #0067ab;
     font-size: 1.2rem;
     margin-top: 20px;
@@ -754,7 +742,112 @@ background: #E6E6E8;
     margin-top: 30px;
     border: 2px solid #8080802b;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;}
+.sm-img {
+border:2px solid rgb(158, 156, 156);
+height: 60px;
+}
+.sm-box-container {
+display: flex;
+width:100%;
+justify-content: space-around;
+}
+ #box {
+      position:fixed;
+      bottom: 0;
+        background: #E6E6E8;
+        height: 94px;
+        transition: height 300ms;
+        width: 100%;
+z-index:99;
+    }
+   #box.is-active {
+        height: 300px;
+border-top: 2px solid #0067ab;
+    }
 
+/* Photo Slider */
+
+ 
+  img {
+    vertical-align: middle;
+  }
+  
+  .image-container {
+    position: relative;
+    margin-top:20px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #515356;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    color: #0067ab;
+  }
+  
+  .numbertext {
+    color: #515356;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #E6E6E8;
+    padding: 0.5px 28px;
+    margin-bottom: 16px;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column-slide {
+    float: left;
+    width: 16.66%;
+  }
+  .sm-img {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .sm-img:hover {
+    opacity: 1;
+  }
 @media (max-width: 680px) {
 
   .main-nav,
