@@ -9,8 +9,6 @@
     <meta name="description" content="Monnit Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"  >
-  
- 
 </head>
 
 <body>
@@ -86,7 +84,7 @@
                         </li>
                     </ul>
                 </nav>
-                <img id="logo-image" src="./images/logo.webp" alt="Image"  style="width:250px; height:40px"
+                <img id="logo-image" src="./images/logo.webp" alt="Image"  width="250" height="40" 
                     fetchpriority="high">
                 
             </div>
@@ -378,26 +376,26 @@
 
         <div class="product-summary">
            
-
+<div style="width:100%;" class="img-position"> 
             <div class="image-container">
                 <div class="mySlides">
                   <div class="numbertext">1 / 4</div>
-                  <img fetchpriority="high" as="image" src="./images/Sensor.webp" style="width:200px; height:auto">
+                  <img fetchpriority="high" as="image" src="./images/Sensor.webp" srcset="./images/Sensor.webp 500, ./images/Sensor.webp 1000w, "sizes="50vw">
                 </div>
               
                 <div class="mySlides">
                   <div class="numbertext">2 / 4</div>
-                  <img src="./images/AA-wireless-temperature-sensor-with-probe.webp" style="width:200px; height: auto;">
+                  <img src="./images/AA-wireless-temperature-sensor-with-probe.webp" srcset="./images/AA-wireless-temperature-sensor-with-probe.webp 500, ./images/AA-wireless-temperature-sensor-with-probe.webp 1000w, ">
                 </div>
               
                 <div class="mySlides">
                   <div class="numbertext">3 / 4</div>
-                  <img src="./images/AA-sensor-housing-dimensions.webp" style="width:200px; height:auto">
+                  <img src="./images/AA-sensor-housing-dimensions.webp" srcset="./images/AA-sensor-housing-dimensions.webp 500, ./images/AA-sensor-housing-dimensions.webp 1000w, ">
                 </div>
                   
                 <div class="mySlides">
                   <div class="numbertext">4 / 4</div>
-                  <img src="./images/wifirangecompare.webp" style="width:200px; height:auto">
+                  <img src="./images/wifirangecompare.webp"  srcset="./images/wifirangecompare.webp 500, ./images/wifirangecompare.webp 1000w, ">
                 </div>
               
                
@@ -411,10 +409,10 @@
               
                 <div class="row sm-box-container">
                   <div class="column-slide">
-                    <img class="sm-img cursor" src="./images/Sensor.webp" style="width:100%" onclick="currentSlide(1)" alt="Wireless IoT Temperature Sensor">
+                    <img class="sm-img cursor" src="./images/Sensor.webp" srcset="./images/Sensor.webp 500, ./images/Sensor.webp 1000w, " onclick="currentSlide(1)" alt="Wireless IoT Temperature Sensor" >
                   </div>
                   <div class="column-slide">
-                    <img class="sm-img cursor" src="./images/AA-wireless-temperature-sensor-with-probe.webp" style="width:100%" onclick="currentSlide(2)" alt="AA Battery Powered">
+                    <img class="sm-img cursor" src="./images/AA-wireless-temperature-sensor-with-probe.webp" srcset="./images/AA-wireless-temperature-sensor-with-probe.webp 500, ./images/AA-wireless-temperature-sensor-with-probe.webp 1000w, " onclick="currentSlide(2)" alt="AA Battery Powered">
                   </div>
                   <div class="column-slide">
                     <img class="sm-img cursor" src="./images/AA-sensor-housing-dimensions.webp" style="width:100%" onclick="currentSlide(3)" alt="Sensor Housing Dimensions">
@@ -425,7 +423,7 @@
                  
                 </div>
               </div>
-
+            </div>
 
             <div class="boxlet" >
 <div style="margin-top:10px;"><b>Includes:</b></div>
@@ -464,7 +462,7 @@
     <!--------------------------
                  Add Ons
     -------------------------->
-
+<div class="addOns">
     <!-- Lead Length -->
     <div class="add-ons-box" style="margin-top:20px;"> Step 1. Choose Lead Length </div>
     <div class="select-wrapper">
@@ -551,12 +549,16 @@
             </svg>
         </div>
     </div>
+  </div>
 
+
+
+<!---------------------- Cart on Bottom  -->
 
     <section class="buy-details fixed-bottom nav-bar">
         <div class="price-show">
             <span id="q-total" style="font-weight: bold; font-size: 25px;" data-value="116">$116.00</span>
-            <span style="color:#0067ab"  onclick="glide()">Show Details</span>
+            <span style="color:#0067ab; cursor: pointer;"  onclick="glide()">Show Details</span>
         </div>
         
         <div>

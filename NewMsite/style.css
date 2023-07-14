@@ -711,6 +711,10 @@ flex-direction: column;
     display: flex;
     color: #08afe6;
 }
+.chooseFile:hover {
+  color: #0067ab;
+  cursor: pointer;
+}
 .add-ons-box {
 font-weight: bold;
 font-size:20px;
@@ -743,6 +747,7 @@ background: #E6E6E8;
 .sm-img {
 border:2px solid rgb(158, 156, 156);
 height: 60px;
+border-radius: 3px;
 }
 .sm-box-container {
 display: flex;
@@ -835,8 +840,8 @@ border-top: 2px solid #0067ab;
   }
 
   .column-slide {
-    float: left;
-    width: 16.66%;
+   width:60px;
+   height:60px;
   }
   .sm-img {
     opacity: 0.6;
@@ -848,8 +853,27 @@ border-top: 2px solid #0067ab;
   }
   .sm-img.cursor.active {
     border:2px solid #0067ab;
+    border-radius:3px;
+    width:100%;
   }
+  @media only screen and (min-width: 680px){
 
+.img-position {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.image-container {
+  width:400px;
+}
+.title-sensor {
+  width:100%;
+  font-size:1.5rem;
+  color:#0067ab;
+  font-weight:bold;
+  background: none;
+}
+  }
 
 
 
